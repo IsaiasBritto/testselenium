@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.4 on win32)" generated="2025-09-09T22:46:49.157969" rpa="false" schemaversion="5">
+<suite id="s1" name="Test1" source="c:\FIAP-Projects\RobotFrameworkFirstTest\testselenium\test1.robot">
+<test id="s1-t1" name="Caso de teste Exemplo" line="7">
+<kw name="Acessar a página da amazon" owner="resource1">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:46:49.420777" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.br/'.</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-09T22:46:49.420477" elapsed="2.045796"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-09T22:46:51.466677" elapsed="0.039708"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-09T22:46:51.506708" elapsed="0.000352"/>
+</kw>
+<status status="PASS" start="2025-09-09T22:46:49.419948" elapsed="2.087261"/>
+</kw>
+<kw name="Pesquisar por celulares" owner="resource1">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-09T22:46:51.508567" level="INFO">Typing text 'celulares' into text field 'id:twotabsearchtextbox'.</msg>
+<msg time="2025-09-09T22:46:52.599916" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-09T22:46:52.600345" level="FAIL">Element with locator 'id:twotabsearchtextbox' not found.</msg>
+<arg>locator=id:twotabsearchtextbox</arg>
+<arg>text=celulares</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-09-09T22:46:51.508201" elapsed="1.095237">Element with locator 'id:twotabsearchtextbox' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>locator=id:nav-search-submit-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-09T22:46:52.603730" elapsed="0.000096"/>
+</kw>
+<status status="FAIL" start="2025-09-09T22:46:51.507841" elapsed="1.096160">Element with locator 'id:twotabsearchtextbox' not found.</status>
+</kw>
+<kw name="Validar o resultado" owner="resource1">
+<status status="NOT RUN" start="2025-09-09T22:46:52.604629" elapsed="0.000115"/>
+</kw>
+<status status="FAIL" start="2025-09-09T22:46:49.419339" elapsed="3.185749">Element with locator 'id:twotabsearchtextbox' not found.</status>
+</test>
+<doc>Testee Exemplo</doc>
+<status status="FAIL" start="2025-09-09T22:46:49.161179" elapsed="3.445110"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test1" id="s1" pass="0" fail="1" skip="0">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
